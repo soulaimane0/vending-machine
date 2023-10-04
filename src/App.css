@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background: #fafafa;
+  color: #2c3e50;
+  padding-bottom: 4rem;
+}
+
+h1 {
+  text-align: center;
+  margin: 1rem 0 1.5rem 0;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+section:first-of-type {
+  width: 40%;
+}
+
+section:last-of-type {
+  width: 40%;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  border: 2px solid #7D95FF;
+  border-bottom: none;
+  justify-content: center;
+}
+
+.products-container .product-item {
+  position: relative;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 4px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.products-container .product-item h4 {
+  margin: 0.8rem 0 0.6rem 0;
+}
+
+.products-container .product-item .product-qty {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background-color: #fafafa;
+  border-radius: 4px;
+  padding: 4px;
+  font-weight: 600;
+}
+
+.products-container .product-item .product-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.cart-container .cart-labels {
+  width: 100%;
+  background-color: #020240;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0.4rem;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.cart-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.cart-actions button,
+.form-action button,
+.collect-btn button {
+  padding: 0.6rem 1rem;
+  border-radius: 0.3rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1.1rem;
+}
+
+button.btn-danger {
+  background-color: #ff4757;
+}
+
+button.btn-success {
+  background-color: #2ed573;
+}
+
+button.btn-danger:hover {
+  background-color: #f4404f;
+}
+
+button.btn-success:hover {
+  background-color: #2bc76c;
+}
+
+.cart-container .cart-products,
+.selected-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  background-color: #7D95FF;
+  padding: 0.8rem 0.3rem;
+}
+
+.selected-product-item {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 0.2rem;
+  padding: 0.2rem;
+}
+
+.selected-product-item .middle-div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 0.6rem;
+
+}
+
+.selected-product-item img {
+  width: 30px;
+  height: 100%;
+  object-fit: contain;
+}
+
+.selected-product-item .selected-product-qty-price {
+  display: flex;
+  font-size: 0.6rem;
+}
+
+.selected-product-item .selected-product-qty-price .product-qty {
+  border: 1px solid #7D95FF;
+  padding: 0.2rem 0.3rem;
+}
+
+.selected-product-item .selected-product-qty-price .product-price {
+  border: 1px solid #7D95FF;
+  padding: 0.2rem 0.3rem;
+  background-color: #7D95FF;
+  color: #fff;
+}
+
+.selected-product-item .unselect-product {
+  border: 1px solid #7D95FF;
+  color: #7D95FF;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+.product-form {
+  margin-bottom: 2rem;
+}
+
+.product-form input {
+  padding: 0.4rem 0.7rem;
+  border: 1px solid;
+  border-radius: 4px;
+  outline: none;
+  color: dimgray;
+  font-size: 1rem;
+}
+
+.product-form .input-group label {
+  font-size: 1.2rem;
+}
+
+.product-form .ref-qty {
+  margin-top: 0.9rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.product-form .ref-qty .input-group input {
+  width: 60px;
+}
+
+.product-form .form-action {
+  margin-top: 0.8rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.product-form .validation-msg {
+  display: block;
+  margin-top: 0.8rem;
+  color: #ff4757;
+  text-align: center;
+}
+
+h4.collect-header {
+  margin-bottom: 0.6rem;
+}
+
+.collect-btn {
+  margin-top: 0.8rem;
+  width: 180px;
+}
+
+.collect-btn button {
+  width: 100%;
+}
